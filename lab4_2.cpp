@@ -1,12 +1,17 @@
 #include<iostream>
-
+#include<cmath>
 using namespace std;
 
-//Write function findDistance() here
-
+double findDistance(double u,double a,double t){
+  double s = u*t + (1.0/2)*a*t*t;
+return s;
+}
 int main(){
-
-  //Calling findDistance() using test cases
+  double x, y, z;
+  cin >> x;
+  cin >> y;
+  cin >> z;
+  cout << "s = " << findDistance(x,y,z);
 
   return 0;
 }
